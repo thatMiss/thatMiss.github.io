@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<style>
+	mark.pink {
+		background-color: pink;
+	}
+</style>
+
+<head>
+	<title>Week5</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">thatMiss</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="index.html">IoT and Cyber Security</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://tr.linkedin.com/in/s%C3%BCmeyra-dedegil-12b690218/en"
+						class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<span class="date">October 12, 2022</span>
+					<p style="font-size:300%;">DDOS Attack, Honeypot, Port Security</p>
+					<table>
+						<tr>
+							<td>
+								<p><b>What is a DDoS Attack? - DDoS Meaning</b></p><br>
+								<p>Distributed Network Attacks are often referred to as Distributed Denial of Service
+									(DDoS) attacks. This type of attack takes advantage of the specific capacity limits
+									that apply to any network resources – such as the infrastructure that enables a
+									company’s website. The DDoS attack will send multiple requests to the attacked web
+									resource – with the aim of exceeding the website’s capacity to handle multiple
+									requests… and prevent the website from functioning correctly.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><b>How a DDoS attack works?</b></p><br>
+								<p>Network resources – such as web servers – have a finite limit to the number of
+									requests that they can service simultaneously. In addition to the capacity limit of
+									the server, the channel that connects the server to the Internet will also have a
+									finite bandwidth / capacity. Whenever the number of requests exceeds the capacity
+									limits of any component of the infrastructure, the level of service is likely to
+									suffer in one of the following ways:
+									<br>• The response to requests will be much slower than normal.
+									<br>• Some – or all – users’ requests may be totally ignored.
+									<br>Usually, the attacker’s ultimate aim is the total prevention of the web
+									resource’s normal functioning – a total ‘denial of service’. The attacker may also
+									request payment for stopping the attack. In some cases, a DDoS attack may even be an
+									attempt to discredit or damage a competitor’s business.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><b>Using a Botnet ‘zombie network’ to deliver a DDoS attack</b></p><br>
+								<p>In order to send an extremely large number of requests to the victim resource, the
+									cybercriminal will often establish a ‘zombie network’ of computers that the criminal
+									has infected. Because the criminal has control over the actions of every infected
+									computer in the zombie network, the sheer scale of the attack can be overwhelming
+									for the victim’s web resources.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><b>The nature of today’s DDoS threats</b></p><br>
+								<p>In the early to mid-2000s, this kind of criminal activity was quite common. However,
+									the number of successful DDoS attacks has been reducing. This decrease in DDoS
+									attacks is likely to have resulted from the following:
+									<br>• Police investigations that have resulted in the arrest of criminals across the
+									world
+									<br>• Technical countermeasures that have been successful against DDoS attacks
+								</p>
+							</td>
+						</tr>
+					</table>
+
+					<table>
+						<tr>
+							<td>
+								<p><b>What is a Honeypot?</b></p><br>
+								<p>A honeypot is a security mechanism that creates a virtual trap to lure attackers. An
+									intentionally compromised computer system allows attackers to exploit
+									vulnerabilities so you can study them to improve your security policies. You can
+									apply a honeypot to any computing resource from software and networks to file
+									servers and routers.
+									<br>Honeypots are a type of deception technology that allows you to understand
+									attacker
+									behavior patterns. Security teams can use honeypots to investigate cybersecurity
+									breaches to collect intel on how cybercriminals operate. They also reduce the risk
+									of false positives, when compared to traditional cybersecurity measures, because
+									they are unlikely to attract legitimate activity.
+									<br>Honeypots vary based on design and deployment models, but they are all decoys
+									intended to look like legitimate, vulnerable systems to attract cybercriminals.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><b>Honeynet: A Network of Honeypots</b></p><br>
+								<p>A honeynet is a decoy network that contains one or more honeypots. It looks like a
+									real network and contains multiple systems but is hosted on one or only a few
+									servers, each representing one environment. For example, a Windows honeypot machine,
+									a Mac honeypot machine and a Linux honeypot machine.
+									<br>A “honeywall” monitors the traffic going in and out of the network and directs
+									it to
+									the honeypot instances. You can inject vulnerabilities into a honeynet to make it
+									easy for an attacker to access the trap.
+								</p>
+								<img height="400" width="500" src="images/hp.png">
+								<p>Example of a honeynet topology<br>
+									Any system on the honeynet may serve as a point of entry for attackers. The honeynet
+									gathers intelligence on the attackers and diverts them from the real network. The
+									advantage of a honeynet over a simple honeypot is that it feels more like a real
+									network, and has a larger catchment area.
+									<br>This makes honeynet a better solution for large, complex networks – it presents
+									attackers with an alternative corporate network which can represent an attractive
+									alternative to the real one.
+								</p>
+							</td>
+						</tr>
+					</table>
+
+					<table>
+						<tr>
+							<td>
+								<p><b>What is port security?</b></p><br>
+								<p>Port Security helps secure the network by preventing unknown devices from forwarding
+									packets. When a link goes down, all dynamically locked addresses are freed. The port
+									security feature offers the following benefits:
+									<br>• You can limit the number of MAC addresses on a given port. Packets that have a
+									matching MAC address (secure packets) are forwarded; all other packets (unsecure
+									packets) are restricted.
+									<br>• You can enable port security on a per port basis.
+									Port security implements two traffic filtering methods, dynamic locking and static
+									locking. These methods can be used concurrently.
+									<br>• <b>Dynamic locking:</b> You can specify the maximum number of MAC addresses
+									that can be
+									learned on a port. The maximum number of MAC addresses is platform dependent and is
+									given in the software Release Notes. After the limit is reached, additional MAC
+									addresses are not learned. Only frames with an allowable source MAC addresses are
+									forwarded.
+
+									<br><b>Note:</b> If you want to set a specific MAC address for a port, set the
+									dynamic entries
+									to 0, then allow only packets with a MAC address matching the MAC address in the
+									static list.
+
+									<br>Dynamically locked addresses can be converted to statically locked addresses.
+									Dynamically locked MAC addresses are aged out if another packet with that address is
+									not seen within the age-out time. You can set the time out value. Dynamically locked
+									MAC addresses are eligible to be learned by another port. Static MAC addresses are
+									not eligible for aging.
+
+									<br>• <b>Static locking:</b> You can manually specify a list of static MAC addresses
+									for a
+									port. Dynamically locked addresses can be converted to statically locked addresses.
+								</p>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>
+								<p>
+									<mark class="pink">
+										As we will understand above, the target server, which is exposed to a data
+										traffic higher than its normal traffic as a result of DDOS attack, cannot handle
+										this load and becomes inoperable. In other words, as a result of the attack, the
+										service provided by the target server is disrupted and customers are blocked
+										from accessing the website.
+										<br>And, if this technique is deliberately put into practice:
+										<br>“244/1 of the TCK No. 5237. Pursuant to the article “Anyone who hinders or
+										disrupts the functioning of an information system is punished with imprisonment
+										from one year to five years.” In that case, since DDoS attacks correspond to the
+										act of "preventing the operation of an information system", they give rise to
+										the crime envisaged in TCK m244.”
+
+									</mark>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</header>
+				<div class="image main"><img src="images/" alt="" /></div>
+				<p></p>
+			</section>
+
+		</div>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Untitled</li>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

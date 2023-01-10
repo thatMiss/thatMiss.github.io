@@ -1,0 +1,684 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<style>
+	mark.pink {
+		background-color: pink;
+	}
+</style>
+
+<head>
+	<title>Week2</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">thatMiss</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="index.html">IoT and Cyber Security</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://tr.linkedin.com/in/s%C3%BCmeyra-dedegil-12b690218/en"
+						class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<span class="date">October 12, 2022</span>
+					<p style="font-size:300%;">Basic Network Scans</p>
+					<table>
+						<tr>
+							<td>
+								<p>
+								<h3>ipconfig</h3><br><br>
+								Displays all current TCP/IP network configuration values and refreshes Dynamic Host
+								Configuration Protocol (DHCP) and Domain Name System (DNS) settings. Used without
+								parameters, ipconfig displays Internet Protocol version 4 (IPv4) and IPv6 addresses,
+								subnet mask, and default gateway for all adapters.<br><br>
+								</p>
+								<p>
+									<b>Syntax:</b><br>
+									ipconfig [/allcompartments] [/all] [/renew [<adapter>]] [/release [<adapter>]]
+											[/renew6[<adapter>]] [/release6 [<adapter>]] [/flushdns] [/displaydns]
+													[/registerdns] [/showclassid <adapter>] [/setclassid <adapter> [
+															<classID>]]
+								</p>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>
+								<b>Parameters</b>
+							</td>
+							<td>
+								<b>Parameter Description</b>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/all
+							</td>
+							<td>
+								<p>Displays the full TCP/IP configuration for all
+									adapters. Adapters can represent physical interfaces,
+									such as installed network adapters, or logical
+									interfaces, such as dial-up connections.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/displaydns
+							</td>
+							<td>
+								<p>Displays the contents of the DNS client
+									resolver cache, which includes both entries preloaded
+									from the local Hosts file and any recently obtained
+									resource records for name queries resolved by the
+									computer. The DNS Client service uses this information
+									to resolve frequently queried names quickly, before
+									querying its configured DNS servers.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/flushdns
+							</td>
+							<td>
+								<p>Flushes and resets the contents of the DNS
+									client resolver cache. During DNS troubleshooting, you
+									can use this procedure to discard negative cache entries
+									from the cache, as well as any other entries that have
+									been added dynamically.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/registerdns
+							</td>
+							<td>
+								<p>Initiates manual dynamic registration for
+									the DNS names and IP addresses that are configured at a
+									computer. You can use this parameter to troubleshoot a
+									failed DNS name registration or resolve a dynamic update
+									problem between a client and the DNS server without
+									rebooting the client computer. The DNS settings in the
+									advanced properties of the TCP/IP protocol determine
+									which names are registered in DNS.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/release [<adapter>]
+							</td>
+							<td>
+								<p>Sends a DHCPRELEASE message to the
+									DHCP server to release the current DHCP
+									configuration and discard the IP address
+									configuration for either all adapters (if an adapter
+									is not specified) or for a specific adapter if the
+									adapter parameter is included. This parameter
+									disables TCP/IP for adapters configured to obtain an
+									IP address automatically. To specify an adapter
+									name, type the adapter name that appears when you
+									use ipconfig without parameters.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/release6[<adapter>]
+							</td>
+							<td>
+								<p>Sends a DHCPRELEASE message to
+									the DHCPv6 server to release the current DHCP
+									configuration and discard the IPv6 address
+									configuration for either all adapters (if an
+									adapter is not specified) or for a specific
+									adapter if the adapter parameter is included.
+									This parameter disables TCP/IP for adapters
+									configured to obtain an IP address
+									automatically. To specify an adapter name, type
+									the adapter name that appears when you use
+									ipconfig without parameters.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/renew [<adapter>]
+							</td>
+							<td>
+								<p>Renews DHCP configuration for
+									all adapters (if an adapter is not
+									specified) or for a specific adapter if the
+									adapter parameter is included. This
+									parameter is available only on computers
+									with adapters that are configured to obtain
+									an IP address automatically. To specify an
+									adapter name, type the adapter name that
+									appears when you use ipconfig without
+									parameters.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/renew6 [<adapter>]
+							</td>
+							<td>
+								<p>Renews DHCPv6
+									configuration for all adapters (if an
+									adapter is not specified) or for a
+									specific adapter if the adapter
+									parameter is included. This parameter is
+									available only on computers with
+									adapters that are configured to obtain
+									an IPv6 address automatically. To
+									specify an adapter name, type the
+									adapter name that appears when you use
+									ipconfig without parameters.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/setclassid <adapter>[<classID>]
+							</td>
+							<td>
+								<p>Configures the DHCP class ID for
+									a specified adapter. To set the
+									DHCP class ID for all adapters,
+									use the asterisk (*) wildcard
+									character in place of adapter.
+									This parameter is available only
+									on computers with adapters that
+									are configured to obtain an IP
+									address automatically. If a DHCP
+									class ID is not specified, the
+									current class ID is removed.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/showclassid <adapter>
+							</td>
+							<td>
+								<p>Displays
+									the DHCP class ID for a
+									specified adapter. To see
+									the DHCP class ID for all
+									adapters, use the asterisk
+									(*) wildcard character in
+									place of adapter. This
+									parameter is available only
+									on computers with adapters
+									that are configured to
+									obtain an IP address
+									automatically.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/?
+							</td>
+							<td>
+								<p>Displays Help at the
+									command prompt</p>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>
+								<b>Examples:</b>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>To display the basic TCP/IP
+									configuration for all
+									adapters, type:
+								</p>
+							</td>
+							<td>
+								<p>ipconfig</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>To display the full TCP/IP
+									configuration for all
+									adapters, type:
+								</p>
+							</td>
+							<td>
+								<p>ipconfig /all</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>To renew a DHCP-assigned IP address configuration for only the Local Area Connection
+									adapter, type:</p>
+							</td>
+							<td>
+								<p>ipconfig /renew Local Area Connection</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>To flush the DNS resolver
+									cache when troubleshooting
+									DNS name resolution
+									problems, type:
+								</p>
+							</td>
+							<td>
+								<p>ipconfig /flushdns</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>To flush the DNS resolver cache when troubleshooting DNS name resolution problems,
+									type:</p>
+							</td>
+							<td>
+								<p>ipconfig /flushdns</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>To display the DHCP class ID for all adapters with names that start with Local, type:
+								</p>
+							</td>
+							<td>
+								<p>ipconfig /showclassid Local*</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>To set the DHCP class ID for the Local Area Connection adapter to TEST, type:</p>
+							</td>
+							<td>
+								<p>ipconfig /setclassid Local Area Connection TEST</p>
+							</td>
+						</tr>
+					</table><br><br>
+					<img height="450" width="500" src="images/ipconfig.png"><br><br><br>
+
+					<table>
+						<tr>
+							<td>
+								<p>
+								<h3>ping</h3><br><br>
+								<p>Verifies IP-level connectivity to another TCP/IP computer by sending Internet Control
+									Message Protocol (ICMP) echo Request messages. The receipt of corresponding echo
+									Reply
+									messages are displayed, along with round-trip times. ping is the primary TCP/IP
+									command
+									used to troubleshoot connectivity, reachability, and name resolution. Used without
+									parameters, this command displays Help content.
+									You can also use this command to test both the computer name and the IP address of
+									the
+									computer. If pinging the IP address is successful, but pinging the computer name
+									isn't,
+									you might have a name resolution problem. In this case, make sure the computer name
+									you
+									are specifying can be resolved through the local Hosts file, by using Domain Name
+									System
+									(DNS) queries, or through NetBIOS name resolution techniques.
+									This command is available only if the Internet Protocol (TCP/IP) is installed as a
+									component in the properties of a network adapter in Network Connections.</p>
+								<br><br>
+								</p>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>
+								<b>Parameters</b>
+							</td>
+							<td>
+								<b>Parameter Description</b>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/t
+							</td>
+							<td>
+								<p>Specifies ping continue sending echo Request messages to the destination until
+									interrupted. To interrupt and display statistics, press CTRL+ENTER. To interrupt and
+									quit this command, press CTRL+C.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/a
+							</td>
+							<td>
+								<p>Specifies reverse name resolution be performed on the destination IP address. If this
+									is successful, ping displays the corresponding host name.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/l -size-
+							</td>
+							<td>
+								<p>Specifies the length, in bytes, of the Data field in the echo Request messages. The
+									default is 32. The maximum size is 65,527.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/f
+							</td>
+							<td>
+								<p>Specifies that echo Request messages are sent with the Do not Fragment flag in the IP
+									header set to 1 (available on IPv4 only). The echo Request message can't be
+									fragmented by routers in the path to the destination. This parameter is useful for
+									troubleshooting path Maximum Transmission Unit (PMTU) problems.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/l -TTL-
+							</td>
+							<td>
+								<p>Specifies the value of the Time To Live (TTL) field in the IP header for echo Request
+									messages sent. The default is the default TTL value for the host. The maximum TTL is
+									255.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/v -TOS-
+							</td>
+							<td>
+								<p>Specifies the value of the Type Of Service (TOS) field in the IP header for echo
+									Request messages sent (available on IPv4 only). The default is 0. TOS is specified
+									as a decimal value from 0 through 255.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/r -count-
+							</td>
+							<td>
+								<p>Specifies the Record Route option in the IP header is used to record the path taken
+									by the echo Request message and corresponding echo Reply message (available on IPv4
+									only). Each hop in the path uses an entry in the Record Route option. If possible,
+									specify a count equal to or greater than the number of hops between the source and
+									destination. The count must be a minimum of 1 and a maximum of 9.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/s -count-
+							</td>
+							<td>
+								<p>Specifies that the Internet timestamp option in the IP header is used to record the
+									time of arrival for the echo Request message and corresponding echo Reply message
+									for each hop. The count must be a minimum of 1 and a maximum of 4. This is required
+									for link-local destination addresses.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/?
+							</td>
+							<td>
+								<p>Displays Help at the
+									command prompt</p>
+							</td>
+						</tr>
+					</table>
+					<img height="350" width="500" src="images/ping.png"><br><br><br>
+
+					<table>
+						<td>
+							<p>
+							<h3>tracert</h3><br><br>
+							<p> This diagnostic tool determines the path taken to a destination by sending Internet
+								Control Message Protocol (ICMP) echo Request or ICMPv6 messages to the destination with
+								incrementally increasing time to live (TTL) field values. Each router along the path is
+								required to decrement the TTL in an IP packet by at least 1 before forwarding it.
+								Effectively, the TTL is a maximum link counter. When the TTL on a packet reaches 0, the
+								router is expected to return an ICMP time Exceeded message to the source computer.<br>
+								<br>This command determines the path by sending the first echo Request message with a
+								TTL of
+								1 and incrementing the TTL by 1 on each subsequent transmission until the target
+								responds or the maximum number of hops is reached. The maximum number of hops is 30 by
+								default and can be specified using the /h parameter.<br>
+								<br>The path is determined by examining the ICMP time Exceeded messages returned by
+								intermediate routers and the echo Reply message returned by the destination. However,
+								some routers do not return time Exceeded messages for packets with expired TTL values
+								and are invisible to the tracert command. In this case, a row of asterisks (*) is
+								displayed for that hop. The path displayed is the list of near/side router interfaces of
+								the routers in the path between a source host and a destination. The near/side interface
+								is the interface of the router that is closest to the sending host in the path.<br>
+								<b>Important:</b><br>
+								This command is available only if the Internet Protocol (TCP/IP) protocol is installed
+								as a component in the properties of a network adapter in Network Connections.
+								To trace a path and provide network latency and packet loss for each router and link in
+								the path, use the pathping command command.
+							</p>
+							<br><br>
+							</p>
+						</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>
+								<b>Parameters</b>
+							</td>
+							<td>
+								<b>Parameter Description</b>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/d
+							</td>
+							<td>
+								<p>Stops attempts to resolve the IP addresses of intermediate routers to their names.
+									This can speed up the return of results.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/h -maximumhops-
+							</td>
+							<td>
+								<p>Specifies the maximum number of hops in the path to search for the target
+									(destination). The default is 30 hops.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/j -hostlist-
+							</td>
+							<td>
+								<p>Specifies that echo Request messages use the Loose Source Route option in the IP
+									header with the set of intermediate destinations specified in <hostlist>. With loose
+										source routing, successive intermediate destinations can be separated by one or
+										multiple routers. The maximum number of addresses or names in the list is 9. The
+										<hostlist> is a series of IP addresses (in dotted decimal notation) separated by
+											spaces. Use this parameter only when tracing IPv4 addresses.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/f
+							</td>
+							<td>
+								<p>Specifies that echo Request messages are sent with the Do not Fragment flag in the IP
+									header set to 1 (available on IPv4 only). The echo Request message can't be
+									fragmented by routers in the path to the destination. This parameter is useful for
+									troubleshooting path Maximum Transmission Unit (PMTU) problems.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/w -timeout-
+							</td>
+							<td>
+								<p>Specifies the amount of time in milliseconds to wait for the ICMP time Exceeded or
+									echo Reply message corresponding to a given echo Request message to be received. If
+									not received within the time-out, an asterisk (*) is displayed. The default time-out
+									is 4000 (4 seconds).</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/v -TOS-
+							</td>
+							<td>
+								<p>Specifies the value of the Type Of Service (TOS) field in the IP header for echo
+									Request messages sent (available on IPv4 only). The default is 0. TOS is specified
+									as a decimal value from 0 through 255.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/R
+							</td>
+							<td>
+								<p>Specifies that the IPv6 Routing extension header be used to send an echo Request
+									message to the local host, using the destination as an intermediate destination and
+									testing the reverse route.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/S -srcaddr-
+							</td>
+							<td>
+								<p>Specifies the source address to use in the echo Request messages. Use this parameter
+									only when tracing IPv6 addresses.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/4
+							</td>
+							<td>
+								<p>Specifies that tracert.exe can use only IPv4 for this trace.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/6
+							</td>
+							<td>
+								<p>Specifies that tracert.exe can use only IPv6 for this trace.</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								-targetname-
+							</td>
+							<td>
+								<p>Specifies the destination, identified either by IP address or host name..</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								/?
+							</td>
+							<td>
+								<p>Displays Help at the
+									command prompt</p>
+							</td>
+						</tr>
+					</table>
+
+					<img height="450" width="700" src="images/tracert.png"><br>
+					<table>
+						<tr>
+							<td>
+								<p>
+									<mark class="pink">
+										The effects of the ping value are not only visible in online games. Watching
+										movies and videos, making a video call, or visiting a website are also linked to
+										ping.
+
+										<br>The ping value is measured in milliseconds (ms). The ideal ping value is 50
+										ms
+										or less. Values above 150 ms cause serious problems in internet connection. If
+										the ping value is high in the speed test, it means the connection speed quality
+										is low. There are also issues to be considered in the speed test. Here are tips
+										for getting accurate results in any area or home internet speed test:
+										<br>1. It is necessary to close all browsers that are open on the computer.
+										<br>2. It is recommended that only the site to be speed tested should remain as
+										the
+										open site.
+										<br>3. Turning off Wi-Fi is very effective for the right result.
+										<br>4. It is important to disconnect all devices connected to the Internet
+										network.
+										<br>5. It is specifically stated that all applications that consume the Internet
+										should be closed.
+										<br>There are factors that affect the ping value for a quality internet usage
+										and
+										efficient gaming environment. Internet infrastructure, internet speed and modem
+										quality evaluation make a big difference for the ping value.
+
+
+									</mark>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</header>
+				<div class="image main"><img src="images/" alt="" /></div>
+				<p></p>
+			</section>
+
+		</div>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Untitled</li>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
